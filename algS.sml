@@ -5,7 +5,7 @@ fun randRange lo hi = Random.randRange(lo,hi);
 val randReal= Random.randReal;
 
 fun randSamp n N seedLo seedHi = if n>N orelse n<1
-				 then (print("The number of records you'd like selected can't be greater than the total number to choose from, or n needs to be positive! \n");[])
+				 then (print("Try again:\n The number you want selected needs to be positive or less than the total number available to choose from! \n");[])
 				 else
 				     let
 					 val myRand = randRandom seedLo seedHi
